@@ -13,10 +13,7 @@
 
 <body>
     <section>
-        <div class="nav">
-            <a href="/login" class="loginBtn">LOGIN</a>
-            <a href="/register" class="joinBtn">JOIN NOW</a>
-        </div>
+        <%- include('./partials/navbar.ejs') %>
         <div class="section-header">
             <div class="container">
                 <h2>Contact Us</h2>
@@ -73,30 +70,9 @@
             </div>
         </div>
         <div class="sep"></div>
-        <div class="footerSection">
-            <div class="footerLeft">
-                <a href="/login">Login</a>
-                <a href="/member">Manage Membership</a>
-                <a href="/contact">Contact Us</a>
-                <a href="/terms">Terms and Conditions</a>
-                <a href="/privacy">Privacy Policy</a>
-            </div>
-            <div class="footerRight">
-                <p>Subscribe to our newsletter</p>
-                <div class="subscribe">
-                    <input type="email" placeholder="Email">
-                    <a href="/subscribe">Submit</a>
-                </div>
-                <div class="socialIcons">
-                    <div><i class="fa-brands fa-facebook-f fa-xl"></i></div>
-                    <div><i class="fa-brands fa-twitter fa-xl"></i></div>
-                    <div><i class="fa-brands fa-instagram fa-xl"></i></div>
-                </div>
-            </div>
-        </div>
-        <p class="footerBottom">contact@course.university</p>
+        <%- include('./partials/footer.ejs') %>
     </section>
-    
+
 </body>
 
 </html>

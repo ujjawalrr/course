@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/c5db804bcf.js" crossorigin="anonymous"></script>
     <title>Home</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/carousel.css">
 </head>
 
 <body>
@@ -23,21 +25,221 @@
             <div class="card">
                 <h2>ASK ME ANYTHING</h2>
                 <p>20 - second custom video</p>
-                <a href="#">START $20 REQUEST</a>
+                <a class="confirmation20Btn" href="/confirmation20">START $20 REQUEST</a>
             </div>
             <div class="card">
                 <h2>BOOK 1:1 CALL</h2>
                 <p>60 - minutes for $1000</p>
-                <a href="#">BOOK CALL</a>
+                <a class="confirmationCallBtn" href="/confirmationCall">BOOK CALL</a>
             </div>
         </div>
     </div>
     <div class="carouselSection">
-        <h2 class="title">41 TENETS</h2>
+        <h2 class="title"></h2>
+        <section id="tranding">
+            <!-- <div class="container-head">
+                <h3 class="text-center section-subheading">- popular Delivery -</h3>
+                <h1 class="text-center section-heading">Tranding food</h1>
+            </div> -->
+            <div class="container">
+                <div class="swiper tranding-slider">
+                    <div class="swiper-wrapper">
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="tranding-slide-img">
+                                <img src="images/computer.png" alt="Tranding">
+                            </div>
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$20</h1>
+                                <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                        Special Pizza
+                                    </h2>
+                                    <h3 class="food-rating">
+                                        <span>4.5</span>
+                                        <div class="rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="tranding-slide-img">
+                                <img src="images/love.jpg" alt="Tranding">
+                            </div>
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$20</h1>
+                                <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                        Meat Ball
+                                    </h2>
+                                    <h3 class="food-rating">
+                                        <span>4.5</span>
+                                        <div class="rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="tranding-slide-img">
+                                <img src="images/favicon.jpg" alt="Tranding">
+                            </div>
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$40</h1>
+                                <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                        Burger
+                                    </h2>
+                                    <h3 class="food-rating">
+                                        <span>4.5</span>
+                                        <div class="rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="tranding-slide-img">
+                                <img src="images/love.jpg" alt="Tranding">
+                            </div>
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$15</h1>
+                                <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                        Frish Curry
+                                    </h2>
+                                    <h3 class="food-rating">
+                                        <span>4.5</span>
+                                        <div class="rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="tranding-slide-img">
+                                <img src="images/favicon.jpg" alt="Tranding">
+                            </div>
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$15</h1>
+                                <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                        Pane Cake
+                                    </h2>
+                                    <h3 class="food-rating">
+                                        <span>4.5</span>
+                                        <div class="rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="tranding-slide-img">
+                                <img src="images/check.jpg" alt="Tranding">
+                            </div>
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$20</h1>
+                                <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                        Vanilla cake
+                                    </h2>
+                                    <h3 class="food-rating">
+                                        <span>4.5</span>
+                                        <div class="rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="tranding-slide-img">
+                                <img src="images/computer.png" alt="Tranding">
+                            </div>
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$8</h1>
+                                <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">
+                                        Straw Cake
+                                    </h2>
+                                    <h3 class="food-rating">
+                                        <span>4.5</span>
+                                        <div class="rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                    </div>
+
+                    <div class="tranding-slider-control">
+                        <div class="swiper-button-prev slider-arrow">
+                            <ion-icon name="arrow-back-outline"></ion-icon>
+                        </div>
+                        <div class="swiper-button-next slider-arrow">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
 
     </div>
-    <div class="sep"></div>
+
     <div class="section">
+        <div class="sep"></div>
         <h2 class="title">SKILLS YOU WILL LEARN</h2>
         <div class="skillsContainer">
             <div class="skill">
@@ -161,7 +363,8 @@
         <div class="spotRight">
             <h2>secure your spot for just $49</h2>
             <h3>Our prices will increase to $147 after we reach 200,000 students</h3>
-            <p>Everyday thousands of students join. To maintain standards of teaching and preventing overloading situation prices will keep on increasing.</p>
+            <p>Everyday thousands of students join. To maintain standards of teaching and preventing overloading
+                situation prices will keep on increasing.</p>
             <a href="/register">JOIN NOW</a>
         </div>
     </div>
@@ -183,7 +386,8 @@
                     </div>
                 </div>
             </div>
-            <p>Lorem review1 ipsum dolor sit amet consectetur adipisicing elit. Suscipit qui unde, consequuntur quia iusto rem ex saepe sunt dolore consectetur reiciendis esse tenetur dolor harum.</p>
+            <p>Lorem review1 ipsum dolor sit amet consectetur adipisicing elit. Suscipit qui unde, consequuntur quia
+                iusto rem ex saepe sunt dolore consectetur reiciendis esse tenetur dolor harum.</p>
         </div>
         <div class="review review2">
             <div class="reviewBy">
@@ -201,7 +405,10 @@
                     </div>
                 </div>
             </div>
-            <p>Lorem review2 ipsum dolor sit, amet consectetur adipisicing elit. Ipsam saepe ullam debitis ex a exercitationem magnam voluptate alias libero? Atque nihil eligendi culpa delectus itaque nesciunt possimus dolorum cumque repudiandae porro. Quo, labore sunt? Odit nobis saepe earum, quasi esse nesciunt consequatur ratione possimus quis ex sit officiis, eveniet natus!</p>
+            <p>Lorem review2 ipsum dolor sit, amet consectetur adipisicing elit. Ipsam saepe ullam debitis ex a
+                exercitationem magnam voluptate alias libero? Atque nihil eligendi culpa delectus itaque nesciunt
+                possimus dolorum cumque repudiandae porro. Quo, labore sunt? Odit nobis saepe earum, quasi esse nesciunt
+                consequatur ratione possimus quis ex sit officiis, eveniet natus!</p>
         </div>
         <div class="review review3">
             <div class="reviewBy">
@@ -219,7 +426,10 @@
                     </div>
                 </div>
             </div>
-            <p>Lorem review3 ipsum dolor sit, amet consectetur adipisicing elit. Ipsam saepe ullam debitis ex a exercitationem magnam voluptate alias libero? Atque nihil eligendi culpa delectus itaque nesciunt possimus dolorum cumque repudiandae porro. Quo, labore sunt? Odit nobis saepe earum, quasi esse nesciunt consequatur ratione possimus quis ex sit officiis, eveniet natus!</p>
+            <p>Lorem review3 ipsum dolor sit, amet consectetur adipisicing elit. Ipsam saepe ullam debitis ex a
+                exercitationem magnam voluptate alias libero? Atque nihil eligendi culpa delectus itaque nesciunt
+                possimus dolorum cumque repudiandae porro. Quo, labore sunt? Odit nobis saepe earum, quasi esse nesciunt
+                consequatur ratione possimus quis ex sit officiis, eveniet natus!</p>
         </div>
         <div class="review review4">
             <div class="reviewBy">
@@ -237,7 +447,8 @@
                     </div>
                 </div>
             </div>
-            <p>Lorem review4 ipsum dolor sit amet consectetur adipisicing elit. Suscipit qui unde, consequuntur quia iusto rem ex saepe sunt dolore consectetur reiciendis esse tenetur dolor harum.</p>
+            <p>Lorem review4 ipsum dolor sit amet consectetur adipisicing elit. Suscipit qui unde, consequuntur quia
+                iusto rem ex saepe sunt dolore consectetur reiciendis esse tenetur dolor harum.</p>
         </div>
         <div class="review review5">
             <div class="reviewBy">
@@ -255,17 +466,19 @@
                     </div>
                 </div>
             </div>
-            <p>Lorem review5 ipsum dolor sit, amet consectetur adipisicing elit. Ipsam saepe ullam debitis ex a exercitationem magnam voluptate alias libero? Atque nihil eligendi culpa delectus itaque nesciunt possimus dolorum cumque repudiandae porro. Quo, labore sunt? Odit nobis saepe earum, quasi esse nesciunt consequatur ratione possimus quis ex sit officiis, eveniet natus!</p>
+            <p>Lorem review5 ipsum dolor sit, amet consectetur adipisicing elit. Ipsam saepe ullam debitis ex a
+                exercitationem magnam voluptate alias libero? Atque nihil eligendi culpa delectus itaque nesciunt
+                possimus dolorum cumque repudiandae porro. Quo, labore sunt? Odit nobis saepe earum, quasi esse nesciunt
+                consequatur ratione possimus quis ex sit officiis, eveniet natus!</p>
         </div>
     </div>
     <div class="sep"></div>
     <div class="section footerSection">
         <div class="footerLeft">
             <a href="/login">Login</a>
-            <a href="/member">Manage Membership</a>
             <a href="/contact">Contact Us</a>
             <a href="/terms">Terms and Conditions</a>
-            <a href="/privacy">Privacy Policy</a>
+            <a href="/privacyPolicy">Privacy Policy</a>
         </div>
         <div class="footerRight">
             <p>Subscribe to our newsletter</p>
@@ -282,8 +495,33 @@
     </div>
     <p class="footerBottom">contact@course.university</p>
 
-<!-- Javascript -->
-    
+    <!-- Javascript -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var TrandingSlider = new Swiper('.tranding-slider', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            loop: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2.5,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
 </body>
 
 </html>

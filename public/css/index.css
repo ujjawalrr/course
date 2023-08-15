@@ -4,6 +4,25 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #222224;
+}
+
+::-webkit-scrollbar-track {
+  background: #797979;
+}
 body {
   margin: 0;
   background-color: black;
@@ -56,29 +75,50 @@ body {
   align-items: center;
   gap: 40px;
 }
-.card {
+.card:first-of-type {
   padding: 10px;
-  border: 5px solid white;
+  border: 5px solid red;
+  box-shadow: 2px 2px 12px 3px black;
+  border-radius: 15px;
+  text-align: center;
+}
+.card:last-of-type {
+  padding: 10px;
+  border: 5px solid yellow;
+  box-shadow: 2px 2px 12px 3px black;
   border-radius: 15px;
   text-align: center;
 }
 .card h2 {
   margin: 0;
 }
-.card a {
+.confirmation20Btn {
   text-decoration: none;
-  background-color: rgb(224, 222, 222);
+  background-color: red;
   color: black;
-  border: 2px solid black;
+  border: 2px solid red;
   border-radius: 1.2rem;
   padding: 10px 25px;
   font-weight: 700;
   display: inline-block;
 }
-.card a:hover {
+.confirmation20Btn:hover {
   background-color: black;
-  border: 2px solid rgb(224, 222, 222);
-  color: rgb(224, 222, 222);
+  color: red;
+}
+.confirmationCallBtn {
+  text-decoration: none;
+  background-color: yellow;
+  color: black;
+  border: 2px solid yellow;
+  border-radius: 1.2rem;
+  padding: 10px 25px;
+  font-weight: 700;
+  display: inline-block;
+}
+.confirmationCallBtn:hover {
+  background-color: black;
+  color: yellow;
 }
 .section {
   text-align: center;
@@ -102,10 +142,12 @@ body {
 .crossCard .bg {
   border: 5px solid red;
   border-radius: 1.2rem;
+  box-shadow: 3px 3px 12px 2px red;
 }
 .tickCard .bg {
-  border: 5px solid rgb(4, 197, 227);
+  border: 5px solid yellow;
   border-radius: 1.2rem;
+  box-shadow: 3px 3px 12px 2px yellow;
 }
 .choiceCard .content {
   text-align: center;
@@ -137,12 +179,12 @@ body {
   padding: 0px 15px !important;
 }
 .joinBtnBlue {
-  background-color: rgb(4, 197, 227);
-  border: 5px solid rgb(4, 197, 227);
+  background-color: yellow;
+  border: 2px solid yellow;
   color: black;
   border-radius: 1.2rem;
   font-weight: 700;
-  padding: 5px 25px;
+  padding: 8px 25px;
   text-decoration: none;
   display: inline-block;
   margin-top: 30px;
@@ -150,7 +192,7 @@ body {
 }
 .joinBtnBlue:hover {
   background: none;
-  color: rgb(4, 197, 227);
+  color: yellow;
 }
 .choiceCard p {
   text-transform: uppercase;
@@ -484,7 +526,7 @@ body {
     row-gap: 30px;
   }
   .sep {
-    margin: 90px auto 60px;
+    margin: 150px auto 60px;
     width: 20%;
     border-top: 5px dotted gray;
   }
@@ -557,7 +599,7 @@ body {
     margin-top: 120px;
   }
   .sep {
-    margin: 130px auto 70px;
+    margin: 150px auto 60px;
     width: 20%;
     border-top: 5px dotted gray;
   }
@@ -592,4 +634,18 @@ body {
     grid-column-start: 2;
     grid-column-end: 3;
   }
+}
+.text-center .section-heading {
+  margin: 0px;
+}
+.food-name {
+  margin: 0px;
+  font-size: 1.2em;
+}
+.food-rating {
+  margin: 0px;
+  padding-top: 0px;
+}
+.section {
+  margin-top: 7em;
 }

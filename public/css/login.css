@@ -5,6 +5,25 @@
   box-sizing: border-box;
   user-select: none;
 }
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #222224;
+}
+
+::-webkit-scrollbar-track {
+  background: #797979;
+}
 .bg-img{
   background: url('../images/bannerImg.jpeg');
   height: 100vh;
@@ -27,10 +46,13 @@
   z-index: 999;
   text-align: center;
   padding: 60px 32px;
-  width: 370px;
+  width: 380px;
   transform: translate(-50%,-50%);
   background: rgba(255,255,255,0.04);
   box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+}
+.forgotPasswordContent header{
+  margin: 0 !important;
 }
 .content header{
   color: white;
@@ -155,4 +177,74 @@ i span{
 }
 .signup a:hover{
   text-decoration: underline;
+}
+.backToHome{
+  font-family: 'Poppins',sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #3498db;
+  position: absolute;
+  top: 28px;
+  left: 32px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.backToHome:hover span:last-of-type{
+  text-decoration: underline;
+}
+.verifiedTxt{
+  color: rgb(55, 174, 55);
+}
+.unVerifiedTxt{
+  color: rgb(255, 63, 63);
+}
+@media screen and (max-width: 440px) {
+  .backToHome{
+    left: 22px;
+  }
+  .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    text-align: center;
+    padding: 60px 22px 30px;
+    width: 90%;
+    transform: translate(-50%,-50%);
+    background: rgba(255,255,255,0.04);
+    box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+  }
+  .forgotPasswordContent header{
+    margin: 0 !important;
+  }
+  .content header{
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 35px 0;
+    font-family: 'Montserrat',sans-serif;
+  }
+  .modalTxt{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Montserrat',sans-serif;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 440px) and (max-width: 1000px) {
+  .modalTxt{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Montserrat',sans-serif;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .modalTxt{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Montserrat',sans-serif;
+    margin-top: 10px;
+  }
 }
