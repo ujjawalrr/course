@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>Lecture 3 | Web Development Course</title>
+    <link rel="stylesheet" href="css/combined.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/courseProgress.css">
+    <script src="https://kit.fontawesome.com/c5db804bcf.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section>
+        <%- include('./partials/navbar.ejs') %>
+        <div class="section-header">
+            <div class="courseProgressContainer courseProgress">
+                <div class="lectureContent">
+                    <video src="videos/demoVideo.mp4" controls></video>
+                    <h1>Lecture 3 | Web Development Course</h1>
+                    <h4>Description</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis iusto provident, pariatur consequatur fugiat quis magnam ratione reiciendis sit nulla atque, quam sint ipsa quae? Quidem obcaecati consectetur deserunt numquam fugiat, deleniti, est earum illum vel ad alias rem voluptates praesentium, ullam porro. Eos voluptas excepturi, vel earum recusandae quia!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam corrupti modi veniam quod explicabo veritatis commodi pariatur minima repellat vel ipsa obcaecati enim error, exercitationem omnis ex, atque aspernatur quaerat nemo voluptates dolorum, optio autem perferendis suscipit? Praesentium perspiciatis eum nisi eius ad voluptatem asperiores, minima quod consequatur! Hic quia, quam enim ut officiis beatae porro ea aperiam, ratione consequuntur iste. Nostrum maxime architecto recusandae id, eius voluptatum repellat modi in quisquam sint deleniti aperiam, labore exercitationem culpa dolorem a temporibus fuga maiores voluptate nam. Ea perspiciatis nostrum quos corrupti vel asperiores, ut obcaecati omnis numquam officia exercitationem tempore in?
+                    </p>
+                    <div class="progressBtns">
+                        <a href="/courseProgress">Previous</a>
+                        <a href="/courseProgress">Next</a>
+                    </div>
+                </div>
+                <div class="allLectures">
+                    <h3>All Videos</h3>
+                    <div class="lectureNumbers">
+                        <% for(let i = 0, vidnum=3; i<12; i++){ %>
+                            <% if(vidnum == i+1){ %>
+                                <a href="/courseProgress" class="active">Lecture <%= i+1 %></a>
+                            <% }else{ %>
+                                <a href="/courseProgress">Lecture <%= i+1 %></a>
+                            <% } %>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sep"></div>
+        <%- include('./partials/footer.ejs') %>
+    </section>
+
+</body>
+
+</html>

@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=">
-    <title>Responsive Contact Us Page</title>
+    <title>Web Development Course</title>
     <link rel="stylesheet" href="css/combined.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/courseProgress.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script src="https://kit.fontawesome.com/c5db804bcf.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
 </head>
@@ -14,11 +17,157 @@
 <body>
     <section>
         <%- include('./partials/navbar.ejs') %>
-        <div class="section-header">
-            
-        </div>
-        <div class="sep"></div>
-        <%- include('./partials/footer.ejs') %>
+            <div class="section-header">
+                <div class="courseProgressContainer courseDescContainer">
+                    <div class="lectureContent">
+                        <!-- <video src="videos/demoVideo.mp4" controls></video> -->
+                        <h1>Web Development Course</h1>
+                        <h4>Description</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis iusto provident,
+                            pariatur consequatur fugiat quis magnam ratione reiciendis sit nulla atque, quam sint ipsa
+                            quae? Quidem obcaecati consectetur deserunt numquam fugiat, deleniti, est earum illum vel ad
+                            alias rem voluptates praesentium, ullam porro. Eos voluptas excepturi, vel earum recusandae
+                            quia!
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam corrupti modi veniam
+                            quod explicabo veritatis commodi pariatur minima repellat vel ipsa obcaecati enim error,
+                            exercitationem omnis ex, atque aspernatur quaerat nemo voluptates dolorum, optio autem
+                            perferendis suscipit? Praesentium perspiciatis eum nisi eius ad voluptatem asperiores,
+                            minima quod consequatur! Hic quia, quam enim ut officiis beatae porro ea aperiam, ratione
+                            consequuntur iste. Nostrum maxime architecto recusandae id, eius voluptatum repellat modi in
+                            quisquam sint deleniti aperiam, labore exercitationem culpa dolorem a temporibus fuga
+                            maiores voluptate nam. Ea perspiciatis nostrum quos corrupti vel asperiores, ut obcaecati
+                            omnis numquam officia exercitationem tempore in?
+                        </p>
+                        <div class="topicsCovered">
+                            <h4>Topics Covered</h4>
+                            <p><img src="images/check.jpg" class="check" alt=""><span>HTML</span></p>
+                            <p><img src="images/check.jpg" class="check" alt=""><span>CSS</span></p>
+                            <p><img src="images/check.jpg" class="check" alt=""><span>Javascript</span></p>
+                            <p><img src="images/check.jpg" class="check" alt=""><span>Mongo Db</span></p>
+                            <p><img src="images/check.jpg" class="check" alt=""><span>Node JS</span></p>
+                            <p><img src="images/check.jpg" class="check" alt=""><span>Express JS</span></p>
+                            <p><img src="images/check.jpg" class="check" alt=""><span>React JS</span></p>
+                        </div>
+                        <div class="allLectures buyBoxMobile">
+                            <video src="videos/demoVideo.mp4" controls></video>
+                            <h3>Web Development Course</h3>
+                            <div class="descContent">
+                                <div class="title">
+                                    <span class="material-symbols-outlined">
+                                        smart_display
+                                    </span>
+                                    <span>Videos</span>
+                                </div>
+                                <div class="number">
+                                    10
+                                </div>
+                            </div>
+                            <div class="descContent">
+                                <div class="title">
+                                    <span class="material-symbols-outlined">
+                                        person
+                                    </span>
+                                    <span>Students</span>
+                                </div>
+                                <div class="number">
+                                    20
+                                </div>
+                            </div>
+                            <div class="descContent">
+                                <div class="title">
+                                    <span class="material-symbols-outlined">
+                                        quiz
+                                    </span>
+                                    <span>Quiz Questions</span>
+                                </div>
+                                <div class="number">
+                                    15
+                                </div>
+                            </div>
+                            <div class="descContent">
+                                <div class="title">
+                                    <span class="material-symbols-outlined">
+                                        attach_money
+                                    </span>
+                                    <span>Price</span>
+                                </div>
+                                <div class="number">
+                                    $ 200
+                                </div>
+                            </div>
+                            <div class="lectureNumbers">
+                                <a href="/courseProgress" class="active">Buy at $ 200</a>
+                            </div>
+                            <div class="lectureNumbers">
+                                <a href="/courseProgress" class="active">Buy as affiliate</a>
+                            </div>
+                        </div>
+                        <div class="otherCourses">
+                            <h4>Other Courses</h4>
+                            <%- include('./partials/otherCourses.ejs') %>
+                        </div>
+                    </div>
+                    <div class="allLectures buyBox">
+                        <video src="videos/demoVideo.mp4" controls></video>
+                        <h3>Web Development Course</h3>
+                        <div class="descContent">
+                            <div class="title">
+                                <span class="material-symbols-outlined">
+                                    smart_display
+                                </span>
+                                <span>Videos</span>
+                            </div>
+                            <div class="number">
+                                10
+                            </div>
+                        </div>
+                        <div class="descContent">
+                            <div class="title">
+                                <span class="material-symbols-outlined">
+                                    person
+                                </span>
+                                <span>Students</span>
+                            </div>
+                            <div class="number">
+                                20
+                            </div>
+                        </div>
+                        <div class="descContent">
+                            <div class="title">
+                                <span class="material-symbols-outlined">
+                                    quiz
+                                </span>
+                                <span>Quiz Questions</span>
+                            </div>
+                            <div class="number">
+                                15
+                            </div>
+                        </div>
+                        <div class="descContent">
+                            <div class="title">
+                                <span class="material-symbols-outlined">
+                                    attach_money
+                                </span>
+                                <span>Price</span>
+                            </div>
+                            <div class="number">
+                                $ 200
+                            </div>
+                        </div>
+                        <div class="lectureNumbers">
+                            <a href="/courseProgress" class="active">Buy at $ 200</a>
+                        </div>
+                        <div class="lectureNumbers">
+                            <a href="/courseProgress" class="active">Buy as affiliate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sep"></div>
+            <%- include('./partials/footer.ejs') %>
     </section>
 
 </body>

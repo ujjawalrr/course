@@ -51,6 +51,9 @@ app.get('/confirmation20', (req, res) => {
 app.get('/confirmationCall', (req, res) => {
     res.render('confirmationCall');
 })
+app.get('/allCourses', (req, res) => {
+    res.render('allCourses');
+})
 app.get('/courseDescription', (req, res) => {
     res.render('courseDescription');
 })

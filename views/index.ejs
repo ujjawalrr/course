@@ -242,30 +242,30 @@
         <div class="sep"></div>
         <h2 class="title">SKILLS YOU WILL LEARN</h2>
         <div class="skillsContainer">
-            <div class="skill">
+            <a href="/courseDescription" class="skill">
                 <img src="images/computer.png" alt="">
                 <p> FREELANCING</p>
-            </div>
-            <div class="skill">
+            </a>
+            <a href="/courseDescription" class="skill">
                 <img src="images/love.jpg" alt="">
                 <p> E - COMMERCE</p>
-            </div>
-            <div class="skill">
+            </a>
+            <a href="/courseDescription" class="skill">
                 <img src="images/mountain.png" alt="">
                 <p> TRADING & INVESTING</p>
-            </div>
-            <div class="skill">
+            </a>
+            <a href="/courseDescription" class="skill">
                 <img src="images/bannerImg.jpeg" alt="">
                 <p> CRYPTO & NFTs </p>
-            </div>
-            <div class="skill">
+            </a>
+            <a href="/courseDescription" class="skill">
                 <img src="images/computer.png" alt="">
                 <p> FREELANCING</p>
-            </div>
-            <div class="skill">
+            </a>
+            <a href="/courseDescription" class="skill">
                 <img src="images/computer.png" alt="">
                 <p> FREELANCING</p>
-            </div>
+            </a>
         </div>
     </div>
     <div class="sep"></div>
@@ -366,6 +366,42 @@
             <p>Everyday thousands of students join. To maintain standards of teaching and preventing overloading
                 situation prices will keep on increasing.</p>
             <a href="/register">JOIN NOW</a>
+        </div>
+    </div>
+    <div class="sep"></div>
+    <div class="section faq">
+        <h2 class="title">FAQs and Reviews</h2>
+        <div class="faqs">
+            <div class="faqBox">
+                <button class="accordion">Frequently Asked Question 1</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="faqBox">
+                <button class="accordion">Frequently Asked Question 2</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="faqBox">
+                <button class="accordion">Frequently Asked Question 3</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="sep"></div>
@@ -487,9 +523,9 @@
                 <a href="/subscribe">Submit</a>
             </div>
             <div class="socialIcons">
-                <div><i class="fa-brands fa-facebook-f fa-xl"></i></div>
-                <div><i class="fa-brands fa-twitter fa-xl"></i></div>
-                <div><i class="fa-brands fa-instagram fa-xl"></i></div>
+                <a><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+                <a><i class="fa-brands fa-twitter fa-xl"></i></a>
+                <a><i class="fa-brands fa-instagram fa-xl"></i></a>
             </div>
         </div>
     </div>
@@ -521,6 +557,22 @@
                 prevEl: '.swiper-button-prev',
             }
         });
+
+
+        // Accordian
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
     </script>
 </body>
 

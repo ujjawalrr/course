@@ -4,6 +4,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.164);
+}
+.section-header{
+  padding-top: 100px !important;
 }
 .loginBtn {
   text-decoration: none;
@@ -86,7 +94,7 @@
   align-items: center;
   gap: 15px;
 }
-.socialIcons div {
+.socialIcons a {
   color: black;
   background-color: white;
   border-radius: 50%;
@@ -95,6 +103,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .footerBottom {
   text-align: center;

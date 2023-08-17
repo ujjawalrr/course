@@ -1,0 +1,196 @@
+.courseProgressContainer {
+  display: flex;
+  text-align: left;
+  position: relative;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+.courseProgressContainer ::-webkit-scrollbar {
+  width: 0.2rem;
+}
+.courseProgressContainer ::-webkit-scrollbar-thumb {
+  background: rgb(55, 174, 55);
+  transition: all 0.5s ease-in-out;
+}
+.courseProgressContainer ::-webkit-scrollbar-thumb:hover {
+  background: #222224;
+}
+.courseProgressContainer ::-webkit-scrollbar-track {
+  background: white;
+}
+.lectureContent {
+  width: 70%;
+}
+.lectureContent video {
+  width: 100%;
+}
+.lectureContent h1 {
+  color: red;
+  padding: 1rem 0;
+}
+.lectureContent h4 {
+  font-size: 1.2rem;
+  color: yellow;
+  padding: 0.5rem 0;
+}
+.lectureContent .progressBtns {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.lectureContent .progressBtns a {
+  background-color: red;
+  border: 3px solid red;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  border-radius: 0.4rem;
+  line-height: 40px;
+  font-size: 0.8rem;
+}
+.lectureContent .progressBtns a:hover {
+  background: none;
+}
+.allLectures h3 {
+  color: red;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+.allLectures .lectureNumbers {
+  display: flex;
+  flex-direction: column;
+}
+.allLectures .lectureNumbers a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  color: white;
+  border: 3px solid rgb(55, 174, 55);
+  /* border: 3px solid white; */
+  border-radius: 10px;
+  margin: 5px 0;
+}
+.allLectures .lectureNumbers a:hover {
+  background-color: rgb(55, 174, 55);
+}
+.allLectures .lectureNumbers .active {
+  background-color: rgb(55, 174, 55);
+}
+.allLectures .lectureNumbers .active:hover {
+  background: none;
+  border: 3px solid rgb(55, 174, 55);
+  color: rgb(55, 174, 55);
+}
+
+/* Course Description */
+
+.allLectures video {
+  width: 100%;
+}
+.allLectures img {
+  width: 100%;
+}
+.descContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 5px 0;
+}
+.descContent .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.otherCourses {
+  padding-top: 20px;
+}
+.check {
+  width: 18px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.topicsCovered {
+  text-align: left;
+  padding-top: 20px;
+}
+.topicsCovered p {
+  margin: 0;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  .courseProgressContainer {
+    flex-direction: column;
+  }
+  .lectureContent {
+    width: 100%;
+  }
+  .courseProgressContainer .allLectures {
+    width: 100%;
+  }
+  .buyBox {
+    overflow-y: auto;
+    display: none;
+    /* overflow-y: hidden; */
+  }
+  .buyBoxMobile {
+    display: inline-block;
+    padding: 0.5rem;
+    border: 3px solid red;
+    border-radius: 0.4rem;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .courseDescContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .courseDescContainer .lectureContent {
+    width: 100%;
+  }
+  .courseDescContainer .buyBox {
+    display: none;
+  }
+  .buyBoxMobile {
+    padding: 0.5rem;
+    border: 3px solid red;
+    border-radius: 0.4rem;
+    width: 400px;
+    margin: 30px auto 0;
+  }
+  .courseProgress .allLectures {
+    width: 30%;
+    padding: 0.5rem;
+    position: sticky;
+    right: 0;
+    top: 100px;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    border: 3px solid red;
+    border-radius: 0.4rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .allLectures {
+    width: 30%;
+    padding: 0.5rem;
+    position: sticky;
+    right: 0;
+    top: 100px;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    border: 3px solid red;
+    border-radius: 0.4rem;
+  }
+  .buyBoxMobile {
+    display: none;
+  }
+}

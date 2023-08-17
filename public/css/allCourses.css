@@ -1,0 +1,35 @@
+@media screen and (max-width: 350px) {
+    .allCoursesContainer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+        column-gap: 20px;
+    }
+}
+@media screen and (min-width: 350px) and (max-width: 600px) {
+    .allCoursesContainer{
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        row-gap: 30px;
+        column-gap: 20px;
+        text-align: center;
+        margin: auto;
+        width: 300px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .allCoursesContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+        column-gap: 20px;
+    }
+}
+@media screen and (min-width: 900px) {
+    .allCoursesContainer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 30px;
+        column-gap: 20px;
+    }
+}
