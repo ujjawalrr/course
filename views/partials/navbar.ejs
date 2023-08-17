@@ -4,21 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=">
-    <title>Responsive Contact Us Page</title>
+    <title>Navbar</title>
     <link rel="stylesheet" href="css/combined.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+    rel="stylesheet">
     <script src="https://kit.fontawesome.com/c5db804bcf.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="nav">
-        <a href="/" class="navLogo"><img src="images/cloud.png" alt=""></a>
-        <a href="/profile" class="loginBtn">PROFILE</a>
-        <a href="/updateProfile" class="loginBtn">UPDATE PROFILE</a>
-        <a href="/allCourses" class="loginBtn">ALL COURSES</a>
-        <a href="/login" class="loginBtn">LOGIN</a>
-    </div>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <span><a href="/"><img class="logoimg" src="images/love.jpg" alt=""></a></span>
+        <label class="logo">Course Website</label>
+        <ul>
+            <li><a href="/allCourses" class="navBtn">ALL COURSES</a></li>
+            <li><a href="/profile" class="navBtn">PROFILE</a></li>
+            <li><a href="/login" class="joinBtn">LOGIN</a></li>
+        </ul>
+    </nav>
 </body>
 
 </html>
