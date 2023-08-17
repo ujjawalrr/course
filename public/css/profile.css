@@ -1,0 +1,147 @@
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileContainer {
+  display: flex;
+  width: 950px;
+  gap: 20px;
+}
+.profileLeft {
+  width: 300px;
+}
+.profileLeft img {
+  width: 250px;
+  height: 300px;
+  border: 3px solid red;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.profileLeft h3 {
+  font-size: 22px;
+  color: white;
+  margin: 5px 0;
+}
+.profileLeft span {
+  font-size: 18px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.621);
+  display: inline-block;
+  padding: 5px 0;
+}
+.profileBtns a {
+  background-color: red;
+  border: 3px solid red;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  border-radius: 0.4rem;
+  line-height: 40px;
+  font-size: 0.8rem;
+  margin: 5px 0;
+}
+.profileBtns a:hover {
+  color: red;
+  background: none;
+}
+.profileRight {
+  border-left: 2px solid white;
+  padding-left: 20px;
+  width: 100%;
+  text-align: left;
+}
+.profileRight h1 {
+  font-size: 28px;
+  color: red;
+  font-weight: 600;
+}
+.profileRow{
+    padding: 10px 0;
+}
+.profileRow p{
+    margin-bottom: 10px;
+}
+.profileRow input{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: white;
+}
+.profileRow input[disabled]{
+    background-color: rgba(255, 255, 255, 0.685);
+}
+.verifiedEmailBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.verifiedImgCheck{
+    width: 18px;
+    border-radius: 5px;
+}
+.verifiedTxt{
+    color: green;
+    font-size: 18px;
+    margin-left: 5px;
+}
+.profileImgMobile{
+    display: none;
+}
+.profileBtnsMobile{
+    display: none;
+}
+@media screen and (max-width: 450px){
+    .profileBtnsMobile{
+        flex-direction: column;
+        gap: 0;
+        margin-top: 15px;
+      }
+}
+@media screen and (max-width: 750px){
+    .profileContainer {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        gap: 20px;
+      }
+      .profileLeft{
+        display: none;
+      }
+      .profileRight {
+        border-left: none;
+        padding-left: 0;
+        width: 100%;
+        text-align: left;
+      }
+      .profileImgMobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .profileImgMobile img{
+        width: 250px;
+        height: 300px;border: 3px solid red;
+        border-radius: 10px;
+        object-fit: cover;
+        margin: 15px 0;
+      }
+      .profileRight h1 {
+        font-size: 28px;
+        text-align: center;
+      }
+      .profileBtnsMobile{
+        display: flex;
+        gap: 5px;
+      }
+}
+@media screen and (min-width: 750px) and (max-width: 1000px){
+    .profileContainer {
+        display: flex;
+        width: 85%;
+        gap: 20px;
+      }
+}
